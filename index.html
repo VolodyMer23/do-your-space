@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <script src="https://apis.google.com/js/platform.js" defer></script>
+    <title>Do Your Space</title>
+  </head>
+  <body>
+    <header class="header__main">
+      <div class="nav_container">
+        <a href="./index.html" class="logo" lang="en" title="Do Your Space">
+          <svg width="45" height="45">
+            <use
+              width="28"
+              height="45"
+              href="./images/logo.svg#logo"
+              class="header_logo"
+            ></use>
+          </svg>
+
+          <div class="logo_text">
+            <span class="logo_name"> Do Your Space</span>
+            <span class="logo_sub"> Твої мрії - наша реальність</span>
+          </div>
+        </a>
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a
+                href="./index.html"
+                class="navigation__link navigation__link--current link"
+                ><p>Про нас</p></a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#portfolio" class="navigation__link link"
+                ><p>Портфоліо</p></a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#cont" class="navigation__link link"
+                ><p>ПИТАННЯ - ВІДПОВІДІ</p></a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header-contacts__list list">
+          <li class="header-contacts__item">
+            <a href="tel:+380967894111" class="header-contacts__link link">
+              <svg
+                class="header-contacts__icon-smartphone"
+                width="10"
+                height="16"
+              >
+                <use href="./images/logo.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 789 41 11</a
+            >
+          </li>
+        </ul>
+        <nav></nav>
+      </div>
+    </header>
+    <main>
+      <div class="main_container">
+        <section class="hero_section">
+          <div class="hero_wrapper">
+            <div class="hero_logo_wrapper">
+              <svg width="150" height="219">
+                <use
+                  width="150"
+                  height="219"
+                  href="./images/logo.svg#logo"
+                  class="hero_logo"
+                ></use>
+              </svg>
+              <div class="logo_text">
+                <span class="logo_name"> Do Your Space</span>
+                <span class="logo_sub"> Твої мрії - наша реальність</span>
+              </div>
+            </div>
+            <div class="hero_text_wrapper">
+              <h2 class="hero_text">ДИЗАЙН ІНТЕР'ЄРУ</h2>
+              <h2 class="hero_text">КОМПЛЕКСНИЙ РЕМОНТ</h2>
+              <h2 class="hero_text">МЕБЛІ</h2>
+              <h2 class="hero_text">ДЕКОРУВАННЯ</h2>
+            </div>
+            
+          </div>
+          <div
+              class="g-ytsubscribe"
+              data-channel="GoogleDevelopers"
+              data-layout="default"
+              data-theme="dark"
+              data-count="hidden"
+            ></div>
+        </section>
+        <section id="portfolio" class="gallery_section">
+          <h2 class="section_title">ПОРТФОЛІО</h2>
+          <svg width="400" height="16">
+                <use
+                  width="400"
+                  height="16"
+                  href="./images/logo.svg#decor"
+                  class="gallery_decor"
+                ></use>
+              </svg>
+          <ul class="gallery_list">
+            <li class="gallery_item">
+              <img
+                src="./images/remont.jpg"
+                width="510"
+                class="gallery_link"
+                alt=""
+              />
+              <div class="item-text-wrapper">
+                <h3 class="gallery-item-title">ДИЗАЙН ІНТЕР’ЄРА</h3>
+                <p class="gallery-item-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  voluptate ipsa, nisi numquam doloribus nulla dolores. Eligendi
+                  quaerat qui ex quo, sint blanditiis esse soluta id? Dolores
+                  voluptas iusto accusamus veritatis totam.
+                </p>
+              </div>
+            </li>
+            <li class="gallery_item">
+              <img
+                src="./images/remont.jpg"
+                width="510"
+                class="gallery_link"
+                alt=""
+              />
+              <div class="item-text-wrapper">
+                <h3 class="gallery-item-title">
+                  РЕМОНТ ПІД КЛЮЧ, МЕБЛЮВАННЯ, ДЕКОРУВАННЯ
+                </h3>
+                <p class="gallery-item-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  voluptate ipsa, nisi numquam doloribus nulla dolores. Eligendi
+                  quaerat qui ex quo, sint blanditiis esse soluta id? Dolores
+                  voluptas iusto accusamus veritatis totam.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="faq_section">
+          <h2 class="section_title">ПИТАННЯ - ВІДПОВІДІ</h2>
+          <ul class="faq_list">
+            <li class="faq_item">
+              <h3 class="faq_item_title">
+                ДИЗАЙН, РЕМОНТНІ РОБОТИ, ВИРОБНИЦТВО МЕБЛІВ
+              </h3>
+              <div class="question-wrapper">
+                <h4 class="question-title">
+                  Який асортимент послуг ви пропонуєте?
+                </h4>
+                <p class="question-text">
+                  Дизайн інтер`єрів житлової та комерційної нерухомості,
+                  декорування; ремонтно – будівельні роботи «під ключ» житлових
+                  та нежитлових приміщень; виробництво меблів з деревини, МДФ,
+                  ДСП, металу; комплектація побутовою технікою.
+                </p>
+              </div>
+              <div class="question-wrapper">
+                <h4 class="question-title">
+                  Який асортимент послуг ви пропонуєте?
+                </h4>
+                <p class="question-text">
+                  Дизайн інтер`єрів житлової та комерційної нерухомості,
+                  декорування; ремонтно – будівельні роботи «під ключ» житлових
+                  та нежитлових приміщень; виробництво меблів з деревини, МДФ,
+                  ДСП, металу; комплектація побутовою технікою.
+                </p>
+              </div>
+            </li>
+            <li class="faq_item">
+              <h3 class="faq_item_title">СТРОКИ ТА ГАРАНТІЇ</h3>
+            </li>
+            <li class="faq_item">
+              <h3 class="faq_item_title">ЦІНИ ТА ОПЛАТА</h3>
+            </li>
+            <li class="faq_item">
+              <h3 class="faq_item_title">ОРГАНІЗАЦІЙНІ</h3>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer><h3>© 2023 Copyright: Do Your Space</h3></footer>
+  </body>
+</html>
