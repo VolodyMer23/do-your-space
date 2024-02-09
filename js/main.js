@@ -1,5 +1,27 @@
+lightGallery(document.getElementById(`procces-gallery`), {
+  controls: true,
+  counter: false,
+  download: false,
+  thumbnail: true,
+  escKey: true,
+  height: "100%",
+});
 const toggleBtn = document.querySelectorAll(".hideBtn");
-console.log(toggleBtn);
+const galleryLink = document.querySelectorAll(".gallery_item");
+
+galleryLink.forEach((el) => {
+  el.addEventListener('click', (e) => {
+    const path = e.currentTarget.getAttribute("data-path");
+    const target = document.getElementById(`${path}`);
+    const pos = target.offsetTop;
+
+    window.scrollTo(0, pos - 80);
+    console.log("target :>> ", target);
+    console.log(target.offsetTop);
+  })
+})
+
+
 function toggleHide(e) {
   console.log(e);
   console.log(e.target.dataset.type);

@@ -19,8 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="css/lightgallery.css" />
+
     <link href="./css/styles.css" rel="stylesheet" />
-    <script src="https://apis.google.com/js/platform.js" defer></script>
 
     <title>Do Your Space</title>
   </head>
@@ -116,22 +118,17 @@
         </section>
         <section id="portfolio" class="gallery_section">
           <h2 class="section_title">ПОРТФОЛІО</h2>
-          <svg width="400" height="16">
-            <use
-              width="400"
-              height="16"
-              href="./images/logo.svg#decor"
-              class="gallery_decor"
-            ></use>
-          </svg>
+
           <ul class="gallery_list">
-            <li class="gallery_item">
-              <img
-                src="./images/remont.jpg"
-                width="510"
-                class="gallery_link"
-                alt=""
-              />
+            <li class="gallery_item" data-path="design">
+              <a href="" class="gallery__link">
+                <img
+                  src="./images/gallery/dsn/8/006.jpg"
+                  
+                  class="gallery__img"
+                  alt=""
+                />
+              </a>
               <div class="item-text-wrapper">
                 <h3 class="gallery-item-title">ДИЗАЙН ІНТЕР’ЄРА</h3>
                 <p class="gallery-item-text">
@@ -142,7 +139,7 @@
                 </p>
               </div>
             </li>
-            <li class="gallery_item">
+            <li class="gallery_item" data-path="constr">
               <div class="item-text-wrapper">
                 <h3 class="gallery-item-title">
                   РЕМОНТ ПІД КЛЮЧ, МЕБЛЮВАННЯ, ДЕКОРУВАННЯ
@@ -154,22 +151,16 @@
                   voluptas iusto accusamus veritatis totam.
                 </p>
               </div>
-              <img
-                src="./images/remont.jpg"
-                width="510"
-                class="gallery_link"
-                alt=""
-              />
+              <a href="#constr" class="gallery__link">
+                <img
+                  src="./images/gallery/str/8/002.jpg"
+                  
+                  class="gallery__img"
+                  alt=""
+                />
+              </a>
             </li>
           </ul>
-          <svg width="400" height="16">
-            <use
-              width="400"
-              height="16"
-              href="./images/logo.svg#decor"
-              class="gallery_decor"
-            ></use>
-          </svg>
         </section>
         <section class="faq_section" id="faq_section">
           <h2 class="section_title">ПИТАННЯ - ВІДПОВІДІ</h2>
@@ -178,10 +169,10 @@
               <h3 class="faq_item_title">
                 ДИЗАЙН, РЕМОНТНІ РОБОТИ, ВИРОБНИЦТВО МЕБЛІВ
               </h3>
-              <button class="hideBtn"
-                  data-type="design">
+              <button class="hideBtn" data-type="design">
                 <svg width="24" height="24" data-type="design">
-                  <use data-type="design"
+                  <use
+                    data-type="design"
                     width="24"
                     height="24"
                     href="./images/logo.svg#close"
@@ -203,23 +194,102 @@
                 </div>
                 <div class="question-wrapper">
                   <h4 class="question-title">
-                    Який асортимент послуг ви пропонуєте?
+                    Який сумарний досвід ви маєте в розробці дизайну інтер`єрів
+                    офісів, магазинів та іншої комерційної нерухомості?
                   </h4>
                   <p class="question-text">
-                    Дизайн інтер`єрів житлової та комерційної нерухомості,
-                    декорування; ремонтно – будівельні роботи «під ключ»
-                    житлових та нежитлових приміщень; виробництво меблів з
-                    деревини, МДФ, ДСП, металу; комплектація побутовою технікою.
+                    Досвід в розробці та реалізації дизайну інтер`єрів великих
+                    та малих офісів, магазинів та інших приміщень нежитлового
+                    призначення складає більше десяти років.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Можливо замовити у вашій компанії комплексні роботи «під
+                    ключ»? Якщо так, то які послуги включає в себе це поняття в
+                    вашому випадку?
+                  </h4>
+                  <p class="question-text">
+                    Як було і буде зазначено, наша компанія виконує послуги «під
+                    ключ». В нашій інтерпретації – це повний сервіс, що включає
+                    в себе, за необхідності, приймання квартири у Забудовника на
+                    предмет виявлення можливих недоліків, розробка проекту
+                    дизайну з підбором всіх матеріалів, ремонтні роботи,
+                    комплектація меблями, побутовою технікою та декорування, що
+                    може включати в себе також комплектацію посудом, приборами
+                    та необхідними дрібницями для життя або здачі помешкання в
+                    аренду.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">В яких регіонах ви працюєте?</h4>
+                  <p class="question-text">
+                    Послуги з архітектури та дизайну надаємо в усіх містах
+                    України та за її межами. Послуги з ремонту, виробництва
+                    меблів, консультаційні послуги з інвестування надаємо
+                    переважно в Луцьку, Рівно, Львові та областях.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Чи можна замовити лише одну з ваших послуг та які додаткові
+                    вигоди отримує Замовник при комплексному замовленні?
+                  </h4>
+                  <p class="question-text">
+                    Так, ви можете замовити будь – яку з послуг. Серед вагомих
+                    переваг при замовленні комплексу послуг, наприклад, від
+                    дизайну до повної комплектації помешкання, є сумарна вигода
+                    у вигляді економії бюджету, що становитиме від 5 до 20 %.
+                    Наступна та надважлива вигода – це отримання послуг від
+                    однієї компанії, що несе повну відповідальність за весь
+                    комплекс наданих послуг.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Ваша компанія має відповідні ресурси для виконання
+                    надскладних завдань при виконанні ремонтних робіт?
+                  </h4>
+                  <p class="question-text">
+                    Якої б складності не були завдання, ми їх ефективно
+                    вирішимо. Так стверджуємо, бо маємо досвід, професіональний
+                    колектив та стійку потребу в саме таких викликах, завданнях.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Ви робите корпусні та м`які меблі за індивідуальним
+                    замовленням?
+                  </h4>
+                  <p class="question-text">
+                    Так, робимо корпусні та м`які меблі згідно індивідуальних
+                    побажань, потреб Замовника.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    За допомогою яких документів (креслень) ви можете зробити
+                    попередній прорахунок меблів ? Скільки часу потребуватиме
+                    такий прорахунок?
+                  </h4>
+                  <p class="question-text">
+                    Попередній прорахунок вартості майбутніх меблів робимо за
+                    дизайн – проектом, що включає в себе розміри меблів. Також
+                    можемо зробити прорахунок за малюнками або ескізами від руки
+                    із зазначенням розмірів. Це буде трохи складніше та може
+                    потребувати додаткових уточнень. В середньому прорахунок
+                    займає від двох до п`яти днів та залежить від складності
+                    виробів.
                   </p>
                 </div>
               </div>
             </li>
             <li class="faq_item">
               <h3 class="faq_item_title">СТРОКИ ТА ГАРАНТІЇ</h3>
-              <button class="hideBtn"
-                  data-type="warranty">
+              <button class="hideBtn" data-type="warranty">
                 <svg width="24" height="24" data-type="warranty">
-                  <use data-type="warranty"
+                  <use
+                    data-type="warranty"
                     width="24"
                     height="24"
                     href="./images/logo.svg#close"
@@ -230,34 +300,62 @@
               <div class="question-block hide" data-warranty>
                 <div class="question-wrapper">
                   <h4 class="question-title">
-                    Який асортимент послуг ви пропонуєте?
+                    На що ви даєте гарантійний термін? Де це фіксується?
                   </h4>
                   <p class="question-text">
-                    Дизайн інтер`єрів житлової та комерційної нерухомості,
-                    декорування; ремонтно – будівельні роботи «під ключ» житлових
-                    та нежитлових приміщень; виробництво меблів з деревини, МДФ,
-                    ДСП, металу; комплектація побутовою технікою.
+                    Надаємо гарантії на ремонтно – будівельні роботи та меблі –
+                    від 1 року. Гарантійний термін вказується в договорі.
                   </p>
                 </div>
                 <div class="question-wrapper">
                   <h4 class="question-title">
-                    Який асортимент послуг ви пропонуєте?
+                    Коли я буду через вашу компанію купувати матеріали для
+                    будівництва, які гарантії я буду мати, що матеріали якісні?
                   </h4>
                   <p class="question-text">
-                    Дизайн інтер`єрів житлової та комерційної нерухомості,
-                    декорування; ремонтно – будівельні роботи «під ключ» житлових
-                    та нежитлових приміщень; виробництво меблів з деревини, МДФ,
-                    ДСП, металу; комплектація побутовою технікою.
+                    По – перше, ми працюємо лише з компаніями, що мають
+                    репутацію та великий успішний профільний досвід на ринку.
+                    Такі компанії завжди надають оригінал інвойсу та, по запиту,
+                    документи, що свідчать про якість товару.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Скільки, приблизно, часу може піти на ремонт та комплектацію
+                    меблями з ДСП/МДФ, технікою двокімнатної квартири до 90
+                    м.кв.?
+                  </h4>
+                  <p class="question-text">
+                    На ремонтно – будівельні роботи та комплектацію меблями,
+                    технікою двокімнатної квартири може піти від трьох з
+                    половиною до п`яти місяців. Крім того, з досвіду, маємо
+                    зазначити, що на строки впливає не тільки і не стільки
+                    розміри помешкання, скільки складність дизайн – проекту,
+                    вибрані матеріали.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Скільки часу йде на виготовлення, наприклад, кухонь з ДСП /
+                    МДФ довжиною 7 метрів з вбудованою технікою ? Скільки часу
+                    може зайняти монтаж такої кухні?
+                  </h4>
+                  <p class="question-text">
+                    Приблизний час на виготовлення кухні розмірами до 7 метрів
+                    становить 25 днів і залежить від конструктивних
+                    особливостей, складності проектування. Монтаж такої кухні
+                    складе 2-5 днів. Строки виготовлення зазначаються в
+                    договорі.
                   </p>
                 </div>
               </div>
             </li>
             <li class="faq_item">
               <h3 class="faq_item_title">ЦІНИ ТА ОПЛАТА</h3>
-              <button class="hideBtn"
-                  data-type="price">
+              <button class="hideBtn" data-type="price">
                 <svg width="24" height="24" data-type="price">
-                  <use data-type="price"
+                  <use
+                    data-type="price"
                     width="24"
                     height="24"
                     href="./images/logo.svg#close"
@@ -268,34 +366,76 @@
               <div class="question-block hide" data-price>
                 <div class="question-wrapper">
                   <h4 class="question-title">
-                    Який асортимент послуг ви пропонуєте?
+                    В якому ціновому сегменті є ваші послуги?
                   </h4>
                   <p class="question-text">
-                    Дизайн інтер`єрів житлової та комерційної нерухомості,
-                    декорування; ремонтно – будівельні роботи «під ключ» житлових
-                    та нежитлових приміщень; виробництво меблів з деревини, МДФ,
-                    ДСП, металу; комплектація побутовою технікою.
+                    З багаторічного досвіду роботи та аналізу цін місцевих
+                    конкурентів, що роблять якісний дизайн, ремонт та меблі,
+                    можемо стверджувати, що ціни на наші послуги середнього і
+                    нижче рівня.
                   </p>
                 </div>
                 <div class="question-wrapper">
                   <h4 class="question-title">
-                    Який асортимент послуг ви пропонуєте?
+                    Чи має ваша компанія знижки в відомих магазинах сантехніки,
+                    світла?
                   </h4>
                   <p class="question-text">
-                    Дизайн інтер`єрів житлової та комерційної нерухомості,
-                    декорування; ремонтно – будівельні роботи «під ключ» житлових
-                    та нежитлових приміщень; виробництво меблів з деревини, МДФ,
-                    ДСП, металу; комплектація побутовою технікою.
+                    Так, компанія має історію стосунків з відомими компаніями –
+                    постачальниками багатьох матеріалів на ринку України та
+                    відповідні знижки.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Чи можна отримати додаткову знижку на ремонтні роботи,
+                    наприклад, офісу площиною більш ніж 500 метрів квадратних?
+                  </h4>
+                  <p class="question-text">
+                    Так, ми залюбки надаємо знижки Замовникам. Навіть, якщо
+                    приміщення мають меншу площину.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Яка, приблизно, ціна на ремонт квартири в новобудові,
+                    включаючи всі матеріали та витрати. Наприклад, у скільки
+                    обійдеться ремонтні роботи, включаючи всі матеріалі, в тому
+                    числі, стеля – натяжна, стіни – фарбування, покриття –
+                    ламінат однокімнатної квартири? Та у скільки обійдеться
+                    квартира зі схожими матеріалами, але дво- чи три-кімнатна?
+                  </h4>
+                  <p class="question-text">
+                    Вартість буде залежати від багатьох факторів, але якісний
+                    ремонт з відповідними матеріалами починається від 6900
+                    гривень за метр квадратний. З нашого досвіду, можемо
+                    зазначити, що найчастіше однокімнатні квартири і є
+                    найдорожчими у ремонтні. Ремонт двокімнатної або
+                    трикімнатної квартири у 90 % виходить дешевше за аналогічних
+                    матеріалів.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Який розмір авансу потрібен для початку виготовлення меблів?
+                    Та який порядок оплати меблів?
+                  </h4>
+                  <p class="question-text">
+                    Розмір авансу для початку робіт складає 70 % від вартості
+                    виробу. Порядок розрахунку за роботи проходить в три етапи
+                    та складається: 1. Аванс – 70 %. 2. 20 % - до відправлення
+                    меблів Замовнику. 3. 10 % - після закінчення робіт з монтажу
+                    виробів та приймання робіт Замовником.
                   </p>
                 </div>
               </div>
             </li>
             <li class="faq_item">
               <h3 class="faq_item_title">ОРГАНІЗАЦІЙНІ</h3>
-              <button class="hideBtn"
-                  data-type="issues">
+              <button class="hideBtn" data-type="issues">
                 <svg width="24" height="24" data-type="issues">
-                  <use data-type="issues"
+                  <use
+                    data-type="issues"
                     width="24"
                     height="24"
                     href="./images/logo.svg#close"
@@ -306,33 +446,2586 @@
               <div class="question-block hide" data-issues>
                 <div class="question-wrapper">
                   <h4 class="question-title">
-                    Який асортимент послуг ви пропонуєте?
+                    Яку освіту мають керівники вашої компанії?
                   </h4>
                   <p class="question-text">
-                    Дизайн інтер`єрів житлової та комерційної нерухомості,
-                    декорування; ремонтно – будівельні роботи «під ключ» житлових
-                    та нежитлових приміщень; виробництво меблів з деревини, МДФ,
-                    ДСП, металу; комплектація побутовою технікою.
+                    Керівники компанії мають відповідну архітектурну, технічну
+                    та економічну освіту.
                   </p>
                 </div>
                 <div class="question-wrapper">
                   <h4 class="question-title">
-                    Який асортимент послуг ви пропонуєте?
+                    Якими іноземними мовами на рівні спілкування володіють
+                    керівники або менеджери?
                   </h4>
                   <p class="question-text">
-                    Дизайн інтер`єрів житлової та комерційної нерухомості,
-                    декорування; ремонтно – будівельні роботи «під ключ» житлових
-                    та нежитлових приміщень; виробництво меблів з деревини, МДФ,
-                    ДСП, металу; комплектація побутовою технікою.
+                    Архітектори, керівники будівельного напрямку володіють
+                    середнім рівнем англійської, що є достатнім для спілкування,
+                    порозуміння та продуктивної роботи із Замовником. Крім того,
+                    один із співзасновників компанії є громадянином Данії з
+                    відповідним знанням мови.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Якими іноземними мовами на рівні спілкування володіють
+                    керівники або менеджери?
+                  </h4>
+                  <p class="question-text">
+                    Архітектори, керівники будівельного напрямку володіють
+                    середнім рівнем англійської, що є достатнім для спілкування,
+                    порозуміння та продуктивної роботи із Замовником. Крім того,
+                    один із співзасновників компанії є громадянином Данії з
+                    відповідним знанням мови.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Ви маєте досвід роботи з іноземцями, наприклад розробка
+                    дизайн – проекту та його реалізація для громадян інших
+                    країн?
+                  </h4>
+                  <p class="question-text">
+                    Так, маємо значний досвід в реалізації не тільки дизайну
+                    інтер`єрів, ремонтно – будівельних робіт для іноземців, а й
+                    в наданні консультаційної підтримки та допомоги в придбанні
+                    житла в Україні.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Що робити, якщо я не можу вам додзвонитись?
+                  </h4>
+                  <p class="question-text">
+                    Більшу частину нашого дня ми знаходимось на об`єктах
+                    будівництва, де часто є проблеми зі зв`язком. Тому,
+                    заздалегідь сподіваємось на ваше розуміння, якщо ви не
+                    одразу зможете з нами зв`язатись. Для такого випадку просимо
+                    писати нам повідомлення в Viber, WhatsApp, Tg, Messenger або
+                    смс. При першій можливості, ми зв`яжемося з Вами.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Чи могли б ви виконати одночасно роботи «під ключ» на десяти
+                    об`єктах міста?
+                  </h4>
+                  <p class="question-text">
+                    Так, ми маємо ресурси для виконання дизайнерських, ремонтно
+                    – будівельних робіт «під ключ» на десяти і більше об`єктах
+                    міста.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Я не живу постійно в Україні. Чи можливо замовити ваші
+                    послуги в такому випадку ? Та як я буду контролювати хід
+                    виконання робіт?
+                  </h4>
+                  <p class="question-text">
+                    Приблизно п`ятдесят відсотків наших Замовників не мають
+                    можливості регулярно відвідувати помешкання в процесі
+                    виконання робіт. Всі ключові питання стосовно робіт ми
+                    вирішуємо на етапі розробки дизайн – проекту. На наступному
+                    етапі ми чітко виконуємо нашу роботу згідно документів
+                    дизайн – проекту ( креслення, візуалізації) та не
+                    відволікаємо Замовника. Контроль нашої роботи та ваших
+                    витрат реалізуються наступним чином: <br />- погоджений із
+                    Замовником графік виконання робіт; <br />- регулярний фото
+                    звіт з приміщення або он-лайн конференції; <br />-
+                    калькуляція (кошторис) робіт з точками або датами звірки
+                    витрат та виконаних робіт.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Де я можу подивитись ваші роботи?
+                  </h4>
+                  <p class="question-text">
+                    В першу чергу, наші роботи можна подивитись на сайті.
+                    Нажаль, ми не завжди маємо можливість організувати екскурс в
+                    помешкання колишніх та поточних Клієнтів. Робимо це лише за
+                    згодою власника помешкання.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">
+                    Як ви підтримуєте в вашій компанії дисципліну? До кого можна
+                    звернутись у випадку порушення дисципліни на об`єкті?
+                  </h4>
+                  <p class="question-text">
+                    Ми створили в компанії такі умови, що в нас працюють лише
+                    мотивовані професіонали, майстри своєї справи, для яких
+                    дисципліна та культура є неодмінними речами. З приводу
+                    будь-яких непорозумінь, ви можете звернутись як до
+                    виконуючого обов`язки старшого прораба, так і до керівництва
+                    компанії 24/7.
+                  </p>
+                </div>
+                <div class="question-wrapper">
+                  <h4 class="question-title">Чого ми не робимо</h4>
+                  <p class="question-text">
+                    Ми не робимо ремонти «аби було». В нас немає людей з
+                    відповідною кваліфікацією. <br />Ми не робимо часткових
+                    ремонтів та не закінчуємо ремонти за іншими будівельними
+                    компаніями. Але залюбки поділимось контактами тих людей, що,
+                    потенційно, зможуть вам допомогти.
                   </p>
                 </div>
               </div>
             </li>
           </ul>
         </section>
+        <section class="gallery" id="gallery">
+          <h2 class="section_title" id="constr">РЕМОНТ, МЕБЛЮВАННЯ, ДЕКОРУВАННЯ</h2>
+          <ul class="constr">
+            <li class="gallery-btn" data-path="constr1">
+              <img
+                class="gallery-img"
+                src="./images/gallery/str/1/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 1</h3>
+            </li>
+            <li class="gallery-btn" data-path="constr2">
+              <img
+                class="gallery-img"
+                src="./images/gallery/str/2/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 2</h3>
+            </li>
+            <li class="gallery-btn" data-path="constr3">
+              <img
+                class="gallery-img"
+                src="./images/gallery/str/3/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 3</h3>
+            </li>
+            <li class="gallery-btn" data-path="constr4">
+              <img
+                class="gallery-img"
+                src="./images/gallery/str/4/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 4</h3>
+            </li>
+            <li class="gallery-btn" data-path="constr5">
+              <img
+                class="gallery-img"
+                src="./images/gallery/str/5/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 5</h3>
+            </li>
+            <li class="gallery-btn" data-path="constr6">
+              <img
+                class="gallery-img"
+                src="./images/gallery/str/6/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 6</h3>
+            </li>
+            <li class="gallery-btn" data-path="constr7">
+              <img
+                class="gallery-img"
+                src="./images/gallery/str/7/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 7</h3>
+            </li>
+            <li class="gallery-btn" data-path="constr8">
+              <img
+                class="gallery-img"
+                src="./images/gallery/str/8/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 8</h3>
+            </li>
+          </ul>
+          <h2 class="section_title" id="design">ДИЗАЙН</h2>
+          <ul class="constr">
+            <li class="gallery-btn" data-path="design1">
+              <img
+                class="gallery-img"
+                src="./images/gallery/dsn/1/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 1</h3>
+            </li>
+            <li class="gallery-btn" data-path="design2">
+              <img
+                class="gallery-img"
+                src="./images/gallery/dsn/2/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 2</h3>
+            </li>
+            <li class="gallery-btn" data-path="design3">
+              <img
+                class="gallery-img"
+                src="./images/gallery/dsn/3/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 3</h3>
+            </li>
+            <li class="gallery-btn" data-path="design4">
+              <img
+                class="gallery-img"
+                src="./images/gallery/dsn/4/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 4</h3>
+            </li>
+            <li class="gallery-btn" data-path="design5">
+              <img
+                class="gallery-img"
+                src="./images/gallery/dsn/5/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 5</h3>
+            </li>
+            <li class="gallery-btn" data-path="design6">
+              <img
+                class="gallery-img"
+                src="./images/gallery/dsn/6/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 6</h3>
+            </li>
+            <li class="gallery-btn" data-path="design7">
+              <img
+                class="gallery-img"
+                src="./images/gallery/dsn/7/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 7</h3>
+            </li>
+            <li class="gallery-btn" data-path="design8">
+              <img
+                class="gallery-img"
+                src="./images/gallery/dsn/8/001.jpg"
+                alt="Будівництво"
+              />
+              <h3 class="project-title">Проєкт 8</h3>
+            </li>
+          </ul>
+          <h2 class="section_title">В РОБОТІ</h2>
+          <div class="constr" id="procces-gallery">
+            <a class="project-one procces" href="./images/gallery/prc/001.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/001.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/002.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/002.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/003.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/003.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/004.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/004.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/005.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/005.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/006.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/006.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/007.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/007.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/008.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/008.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/009.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/009.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/010.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/010.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/011.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/011.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/012.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/012.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/013.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/013.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/014.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/014.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/015.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/015.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/016.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/016.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/017.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/017.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/018.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/018.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/019.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/019.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/020.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/020.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/021.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/021.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/022.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/022.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/023.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/023.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/024.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/024.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/025.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/025.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/026.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/026.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/027.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/027.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/028.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/028.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/029.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/029.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/030.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/030.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/031.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/031.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/032.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/032.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/033.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/033.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/034.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/034.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+            <a class="project-one" href="./images/gallery/prc/035.jpg">
+              <img
+                class="procces__img"
+                src="./images/gallery/prc/035.jpg"
+                height="150"
+                alt="Будівництво"
+              />
+            </a>
+          </div>
+
+          <div class="modals">
+            <div class="modals-overlay">
+              <div class="modal" data-target="constr1">
+                <div class="constr-gallery" id="constr1-gallery">
+                  <a class="project-one" href="./images/gallery/str/1/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/008.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/008.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/009.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/009.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/010.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/010.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/011.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/011.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/012.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/012.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/013.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/013.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+
+                  <a class="project-one" href="./images/gallery/str/1/016.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/016.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/017.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/017.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/018.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/018.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/019.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/019.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/020.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/020.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/021.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/021.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/1/022.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/1/022.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="modal" data-target="constr2">
+                <div class="constr-gallery" id="constr2-gallery">
+                  <a class="project-one" href="./images/gallery/str/2/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/008.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/008.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/009.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/009.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/010.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/010.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/011.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/011.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/012.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/012.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/013.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/013.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+
+                  <a class="project-one" href="./images/gallery/str/2/016.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/016.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/017.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/017.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/018.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/018.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/019.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/019.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/020.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/020.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/021.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/021.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/2/022.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/2/022.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="modal" data-target="constr3">
+                <div class="constr-gallery" id="constr3-gallery">
+                  <a class="project-one" href="./images/gallery/str/3/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/3/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/3/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/3/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/3/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/3/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/3/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/3/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/3/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/3/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/3/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/3/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/3/008.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/3/008.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/3/009.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/3/009.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/3/010.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/3/010.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/3/011.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/3/011.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/3/012.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/3/012.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/3/013.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/3/013.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+
+                  <a class="project-one" href="./images/gallery/str/3/016.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/3/016.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/3/004.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/3/004.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="modal" data-target="constr4">
+                <div class="constr-gallery" id="constr4-gallery">
+                  <a class="project-one" href="./images/gallery/str/4/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/008.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/008.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/009.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/009.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/010.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/010.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/011.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/011.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/012.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/012.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/013.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/013.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+
+                  <a class="project-one" href="./images/gallery/str/4/016.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/016.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/017.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/017.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/018.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/018.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/019.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/019.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/020.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/020.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/021.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/021.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/4/022.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/4/022.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="modal" data-target="constr5">
+                <div class="constr-gallery" id="constr5-gallery">
+                  <a class="project-one" href="./images/gallery/str/5/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/5/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/5/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/5/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/5/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/5/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/5/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/5/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/5/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/5/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/5/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/5/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/5/008.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/5/008.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/5/009.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/5/009.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/5/010.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/5/010.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/5/011.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/5/011.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/5/012.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/5/012.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/5/013.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/5/004.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="modal" data-target="constr6">
+                <div class="constr-gallery" id="constr6-gallery">
+                  <a class="project-one" href="./images/gallery/str/6/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/008.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/008.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/009.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/009.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/011.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/011.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/012.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/012.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/013.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/013.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/014.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/014.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/016.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/016.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/004.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/004.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/017.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/017.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/018.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/018.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/019.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/019.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/021.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/021.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/023.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/023.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/024.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/024.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/025.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/025.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/028.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/028.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/029.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/029.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/6/032.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/6/032.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="modal" data-target="constr7">
+                <div class="constr-gallery" id="constr7-gallery">
+                  <a class="project-one" href="./images/gallery/str/7/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/7/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/7/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/7/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/7/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/7/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/7/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/7/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/7/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/7/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/7/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/7/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/7/008.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/7/008.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/7/009.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/7/009.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/7/010.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/7/010.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/7/011.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/7/011.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/7/012.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/7/012.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/7/004.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/7/004.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="modal" data-target="constr8">
+                <div class="constr-gallery" id="constr8-gallery">
+                  <a class="project-one" href="./images/gallery/str/8/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/004.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/004.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/008.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/008.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/009.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/009.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/010.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/010.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/011.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/011.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/012.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/012.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/013.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/013.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/014.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/014.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/015.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/015.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/016.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/016.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/018.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/018.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/019.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/019.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/020.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/020.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/021.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/021.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/022.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/022.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/023.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/023.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/024.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/024.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/025.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/025.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/026.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/026.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/027.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/027.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/028.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/028.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/030.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/030.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/031.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/031.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/str/8/032.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/str/8/032.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="modal" data-target="design1">
+                <div class="constr-gallery" id="design1-gallery">
+                  <a class="project-one" href="./images/gallery/dsn/1/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/1/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/1/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/1/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/1/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/1/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/1/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/1/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/1/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/1/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/1/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/1/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="modal" data-target="design2">
+                <div class="constr-gallery" id="design2-gallery">
+                  <a class="project-one" href="./images/gallery/dsn/2/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/2/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/2/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/2/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/2/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/2/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/2/004.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/2/004.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/2/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/2/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/2/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/2/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/2/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/2/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/2/008.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/2/008.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/2/009.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/2/009.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/2/010.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/2/010.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/2/011.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/2/011.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="modal" data-target="design3">
+                <div class="constr-gallery" id="design3-gallery">
+                  <a class="project-one" href="./images/gallery/dsn/3/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/004.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/004.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/008.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/008.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/009.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/009.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/010.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/010.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/011.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/011.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/012.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/012.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/013.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/013.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/014.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/014.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/015.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/015.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/016.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/016.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/017.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/017.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/3/018.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/3/018.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="modal" data-target="design4">
+                <div class="constr-gallery" id="design4-gallery">
+                  <a class="project-one" href="./images/gallery/dsn/4/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/4/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/4/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/4/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/4/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/4/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/4/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/4/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/4/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/4/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/4/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/4/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/4/008.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/4/008.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/4/009.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/4/009.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="modal" data-target="design5">
+                <div class="constr-gallery" id="design5-gallery">
+                  <a class="project-one" href="./images/gallery/dsn/5/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/5/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/5/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/5/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/5/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/5/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/5/004.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/5/004.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/5/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/5/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/5/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/5/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/5/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/5/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/5/008.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/5/008.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/5/009.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/5/009.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/5/010.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/5/010.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/5/011.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/5/011.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="modal" data-target="design6">
+                <div class="constr-gallery" id="design6-gallery">
+                  <a class="project-one" href="./images/gallery/dsn/6/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/6/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/6/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/6/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/6/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/6/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/6/004.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/6/004.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/6/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/6/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/6/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/6/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/6/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/6/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/6/008.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/6/008.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/6/009.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/6/009.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="modal" data-target="design7">
+                <div class="constr-gallery" id="design7-gallery">
+                  <a class="project-one" href="./images/gallery/dsn/7/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/7/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/7/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/7/004.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/004.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/7/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/7/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/7/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/7/008.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/008.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/7/009.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/009.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/7/010.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/010.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/7/011.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/011.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/7/012.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/012.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/7/013.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/013.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/7/014.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/014.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/7/015.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/015.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/7/016.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/7/016.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="modal" data-target="design8">
+                <div class="constr-gallery" id="design8-gallery">
+                  <a class="project-one" href="./images/gallery/dsn/8/001.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/001.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/8/002.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/002.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/8/003.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/003.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/8/004.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/004.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/8/005.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/005.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/8/006.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/006.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/8/007.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/007.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/8/008.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/008.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/8/009.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/009.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/8/010.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/010.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/8/011.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/011.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/8/012.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/012.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/8/013.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/013.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/8/014.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/014.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/8/015.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/015.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                  <a class="project-one" href="./images/gallery/dsn/8/016.jpg">
+                    <img
+                      class="project-one__img"
+                      src="./images/gallery/dsn/8/016.jpg"
+                      height="150"
+                      alt="Будівництво"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
     <footer class="footer"><h3>© 2023 Copyright: Do Your Space</h3></footer>
   </body>
-  <script src="./js/main.js" type="module"></script>
+  <script src="./js/lightgallery.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/main.js" type="module" defer></script>
+  <script></script>
 </html>
